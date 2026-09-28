@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100c2e">
+  <meta name="description" content="PianoKid teaches kids piano: notes fall onto the keys and the app hears your real keyboard.">
+  <title>PianoKid — PianoKid 小琴童</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+(function(){var d=document.documentElement,s;try{s=localStorage.getItem("pk-lang")}catch(e){}
+var l=s||((navigator.language||"").toLowerCase().indexOf("zh")===0?"zh":"en");
+function set(v){d.setAttribute("data-lang",v);try{localStorage.setItem("pk-lang",v)}catch(e){}
+[].forEach.call(document.querySelectorAll(".langs button"),function(b){b.setAttribute("aria-pressed",b.dataset.l===v)})}
+document.addEventListener("DOMContentLoaded",function(){[].forEach.call(document.querySelectorAll(".langs button"),function(b){b.onclick=function(){set(b.dataset.l)}});set(l)})})();
+</script>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="./"><span class="flower" aria-hidden="true"></span>PianoKid · 小琴童</a>
+      <div class="nav-links">
+        <a href="./support/">Support · 支持</a>
+        <a href="./privacy/">Privacy · 隐私</a>
+      </div>
+    </nav>
+    <div class="langs"><button type="button" data-l="en">English</button><button type="button" data-l="zh">中文</button></div>
+
+    <div lang="en">
+      <span class="eyebrow">Learn piano like a game</span>
+      <h1>PianoKid</h1>
+      <p class="lede">Notes fall onto the keys. Play your real keyboard, and the app listens and tells you if it's right. Made for kids starting from zero.</p>
+    </div>
+    <div lang="zh-Hans">
+      <span class="eyebrow">像玩游戏一样学钢琴</span>
+      <h1>小琴童</h1>
+      <p class="lede">音符落到琴键上，在真的琴上弹，App 听得出弹得对不对。专为零基础的小朋友设计。</p>
+    </div>
+    <div class="card">
+      <p lang="en"><a href="support/">Support</a> · <a href="privacy/">Privacy Policy</a></p>
+      <p lang="zh-Hans"><a href="support/">使用支持</a> · <a href="privacy/">隐私政策</a></p>
+    </div>
+    <footer>© 2026 PianoKid · 小琴童</footer>
+  </main>
+</body>
+</html>
